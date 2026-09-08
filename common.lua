@@ -14,5 +14,13 @@ vim.opt.autoindent = true
  
 vim.opt.fileformat = "unix"
 
+vim.keymap.set("n", "<C-d>", "<C-d>zz", {
+  desc = "Half page down and center cursor",
+})
+
+vim.keymap.set("n", "<C-u>", "<C-u>zz", {
+  desc = "Half page up and center cursor",
+})
+
 -- relative numbering
 vim.opt.relativenumber = true
