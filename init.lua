@@ -7,6 +7,7 @@ vim.call('plug#begin')
 Plug 'ellisonleao/gruvbox.nvim'
 Plug 'nvim-tree/nvim-tree.lua'
 Plug 'nvim-tree/nvim-web-devicons'
+Plug 'windwp/nvim-autopairs'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'folke/which-key.nvim'
@@ -24,6 +25,7 @@ package.path = home .. "/AppData/local/nvim/?.lua;" .. package.path
 require "common"
 require "theme"
 require "nvimtree"
+require "autopairs_config"
 require "lualine_config"
 require "which_key_config"
 require "telescope_config"
